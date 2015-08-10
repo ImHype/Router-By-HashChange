@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax</title>
+	<style>
+		.error{
+			color: orange;
+			border: 1px solid orange;
+			padding: 20px;
+			margin: 10px;
+		}
+	</style>
+	<script src="function.js"></script>
+</head>
+<body>
+	<ul>
+		<li>
+			<a href="#index.html">index1</a>
+		</li>
+		<li>
+			<a href="#index2.html">index2</a>		
+		</li>
+		<li>
+			<a href="#index3.html">index3</a>
+		</li>
+	</ul>
+	<br>
+	这是一个获取远程数据的demo
+	<div class="body"></div>
+	<script>
+		var bd = spa.getByClass(document,"body")[0];
+		spa.mvc({body:bd});
+	</script>
+</body>
+</html>
